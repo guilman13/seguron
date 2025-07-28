@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro de Auto - Cotiza Rápido</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    .hero {
+      background-color: #d90429;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .form-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #d90429;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a7031f;
+    }
+    .benefits {
+      background-color: #f4f4f4;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>¿Buscas el mejor seguro de auto?</h1>
+    <p>Cotiza rápido, sin compromiso y directo con la aseguradora.</p>
+    <a href="#formulario"><button>Cotiza ahora</button></a>
+  </div>
+
+  <div class="form-section" id="formulario">
+    <h2>Llena tus datos para cotizar</h2>
+    <form name="cotizador" method="POST" data-netlify="true">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="tel" name="telefono" placeholder="Teléfono o WhatsApp" required>
+      <input type="email" name="email" placeholder="Correo electrónico" required>
+      <input type="text" name="auto" placeholder="Marca, modelo y año del auto" required>
+      <input type="text" name="cp" placeholder="Código postal" required>
+      <button type="submit">Cotizar y continuar</button>
+    </form>
+  </div>
+
+  <div class="benefits">
+    <h3>¿Por qué cotizar con nosotros?</h3>
+    <ul style="list-style: none; padding: 0;">
+      <li>✅ Conectamos directo con aseguradoras líderes</li>
+      <li>✅ Sin llamadas molestas ni compromisos</li>
+      <li>✅ Todo 100% en línea</li>
+      <li>✅ Ahorra tiempo y dinero</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Cotizador Seguro Auto • Protegemos lo que te mueve</p>
+  </div>
+
+  <a href="https://wa.me/52XXXXXXXXXX" target="_blank">
+    <div class="whatsapp-button">💬</div>
+  </a>
+</body>
+</html>
