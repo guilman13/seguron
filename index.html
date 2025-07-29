@@ -91,17 +91,21 @@
     <a href="#formulario"><button>Cotiza ahora</button></a>
   </div>
 
+
   <div class="form-section" id="formulario">
-    <h2>Llena tus datos para cotizar</h2>
-    <form name="cotizador" method="POST" data-netlify="true">
-      <input type="text" name="nombre" placeholder="Nombre completo" required>
-      <input type="tel" name="telefono" placeholder="Teléfono o WhatsApp" required>
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-      <input type="text" name="auto" placeholder="Marca, modelo y año del auto" required>
-      <input type="text" name="cp" placeholder="Código postal" required>
-      <button type="submit">Cotizar y continuar</button>
-    </form>
-  </div>
+  <h2>Llena tus datos para cotizar</h2>
+  <form name="cotizador" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="cotizador">
+    
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+    <input type="tel" name="telefono" placeholder="Teléfono o WhatsApp" required>
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+    <input type="text" name="auto" placeholder="Marca, modelo y año del auto" required>
+    <input type="text" name="cp" placeholder="Código postal" required>
+    
+    <button type="submit">Cotizar y continuar</button>
+  </form>
+</div>
 
   <div class="benefits">
     <h3>¿Por qué cotizar con nosotros?</h3>
@@ -113,16 +117,7 @@
     </ul>
   </div>
 
-  <div class="form-section" id="formulario-datos">
-    <h2>Recibe más información</h2>
-    <form name="datos" method="POST" data-netlify="true">
-      <input type="text" name="nombre" placeholder="Nombre completo" required>
-      <input type="tel" name="telefono" placeholder="Teléfono o WhatsApp" required>
-      <input type="email" name="email" placeholder="Correo electrónico" required>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-
+ 
   <div class="footer">
     <p>© 2025 Cotizador Seguro Auto • Protegemos lo que te mueve</p>
   </div>
