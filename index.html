@@ -92,20 +92,17 @@
   </div>
 
 
- <div class="form-section" id="formulario">
-  <h2>Llena tus datos para cotizar</h2>
-  <form name="cotizador" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="cotizador">
-    
-    <input type="text" name="nombre" placeholder="Nombre completo" required>
-    <input type="tel" name="telefono" placeholder="Teléfono o WhatsApp" required>
-    <input type="email" name="email" placeholder="Correo electrónico" required>
-    <input type="text" name="auto" placeholder="Marca, modelo y año del auto" required>
-    <input type="text" name="cp" placeholder="Código postal" required>
-    
-    <button type="submit">Cotizar y continuar</button>
-  </form>
-</div>
+ <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
 
   <div class="benefits">
     <h3>¿Por qué cotizar con nosotros?</h3>
